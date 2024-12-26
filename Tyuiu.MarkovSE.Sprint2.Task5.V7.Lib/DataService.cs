@@ -5,55 +5,35 @@ namespace Tyuiu.MarkovSE.Sprint2.Task5.V7.Lib
     {
         public string FindMonthName(int startYear, int n)
         {
-            startYear = 1990;
-            string month;
-            if (n > 12)
-            {
-                n %= 12;
-            }
-            switch (n)
+            switch (n % 12)
             {
                 case 0:
-                    month = "январь";
-                    break;
+                    return "январь";
                 case 1:
-                    month = "февраль";
-                    break;
+                    return "февраль";
                 case 2:
-                    month = "март";
-                    break;
+                    return "март";
                 case 3:
-                    month = "аперель";
-                    break;
+                    return "апрель";
                 case 4:
-                    month = "май";
-                    break;
+                    return "май";
                 case 5:
-                    month = "июнь";
-                    break;
+                    return "июнь";
                 case 6:
-                    month = "июль";
-                    break;
+                    return "июль";
                 case 7:
-                    month = "август";
-                    break;
+                    return "август";
                 case 8:
-                    month = "сентябрь";
-                    break;
+                    return "сентябрь";
                 case 9:
-                    month = "октябрь";
-                    break;
+                    return "октябрь";
                 case 10:
-                    month = "ноябрь";
-                    break;
+                    return "ноябрь";
                 case 11:
-                    month = "декабрь";
-                    break;
+                    return "декабрь";
                 default:
-                    month = "Неверное число";
-                    break;
+                    return "Некорректное количество месяцев";
             }
-            return month;
         }
     }
 }
