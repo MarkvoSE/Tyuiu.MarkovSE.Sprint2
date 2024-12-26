@@ -14,3 +14,4 @@ namespace Tyuiu.MarkovSE.Sprint2.Task2.V30.Test
             Assert.AreEqual(false, dataService.CheckDotInShadedArea(8, 8));
         }
     }
+}
